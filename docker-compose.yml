@@ -1,0 +1,8 @@
+services:
+  nimbus:
+    build: .
+    container_name: nimbus
+    ports:
+      - "4566:4566"
+    volumes:
+      - ./data:/app/data
